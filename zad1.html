@@ -1,0 +1,95 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	</head>
+<body>
+	<p> Kod html: </p>
+	<textarea rows="27" cols="120">
+	
+	<html>
+ <head>
+ <title>Przykład nr tutaj wpisz odpowiedni nume </title>
+ <script language="JavaScript">
+ function WinOpen_Kania() 
+ {
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=1000,width=1000,top=1000,left=200");
+ }
+ 
+  function WinClose_Kania() 
+ {
+window.close();
+ }
+ </script>
+ </head>
+<body>
+ <form>
+ <input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_Kania(' ')">
+ <input type="button" name="przycisk" value="Zamknij strone" onclick="WinClose_Kania(' ')">
+ </form>
+</body>
+</html>
+
+	</textarea>
+	
+	<p> Drugi kod html: </p>
+	
+	<textarea rows="55" cols="160">
+	
+	<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+	a)Uwagi na temat JS <br/>
+	<br/>
+	-kiedy powstał -> W 1995 roku, na mocy <br/>
+	porozumienia z firmą Sun Microsystems, w zamian za włączenie do przeglądarki Netscape obsługi <br/>
+	technologii Java, język otrzymał oficjalną nazwę JavaScript<br/>
+	
+	-dlaczego jest to język skryptowy -> . Nie musi <br/>
+	zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania<br/>
+	
+	-gdzie jest wykonywany JS (kliet lub serwer) - klient<br/>
+	
+	-dlaczego jest to bezpieczne narzędzie -> Ze względów bezpieczeństwa JavaScript ma znacznie ograniczone <br/>
+	uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a <br/>
+	wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu. <br/>
+	
+	-czy jest to język obiektowy , jeśli tak to dlaczego -> tak, bo programuje sie tam za pomocą obiektów<br/>
+	
+	<br/>
+	b)Przepisz linie kodu pod nimi wytłumaczenie: <br/> 
+	<br/>
+		&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&gt; 
+		<p> Przycisk do otwarcia nowej strony </p> 
+			<br/>
+			window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200"); 
+		<p> Otwiera nowe okno </p> 
+		
+toolbar=no -> ukrywa standardowy pasek narzędzi <br/>
+directories=no, ->  ukrywa przyciski katalogów <br/>
+menubar=no, -> ukrywa menu przeglądarki <br/>
+height=280, -> ustawia wysokość okna <br/>
+width=160, -> ustawia szerokość okna <br/>
+top=200, ->  ustawia położenie okna względem góry ekranu <br/>
+left=200, -> ustawia położenie okna względem lewej strony ekranu <br/>
+	<br/>
+	
+	window.close() <br/>
+	<p> służy do zamknięcia aktualnego okna </p>
+	
+ <img src="drzewo.gif" />
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
+
+	</textarea>
+	
+</body>
+</html>
+	
