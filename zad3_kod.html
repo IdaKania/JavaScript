@@ -1,0 +1,108 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	</head>
+<body>
+	<p> Kod html: </p>
+	
+	<textarea rows="30" cols="125">
+
+        <html>
+    <head>
+        <meta charset="UTF-8">
+        <script language="JavaScript">
+
+            function okienka() {
+                window.open("okienka.html")
+            }
+
+            function liczby() {
+                window.open("liczby.html")
+            }
+
+            function zamknij() {
+                window.close()
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <input type="button" value="Rodzaje okienek" onclick="okienka('')">
+        <input type="button" value="Konwersja liczb" onclick="liczby('')">
+        <input type="button" name="przycisk" value="Zamknij okno" onclick="zamknij('')">
+    </body>
+    </html>
+
+    </textarea>
+	
+	<p> Drugi kod html: </p>
+
+    <textarea rows="50" cols="150">
+
+        <html>
+
+    <head>
+        <script type="text/javascript">
+
+            function zamknij() {
+                window.close()
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <p> Rodzaje okienek: </p>
+            <ul>
+                <li> Okienko <b>alert</b> – wyświetlająca okienko dialogowe z informacją i przyciskiem OK </li>
+                <li> Okienko <b>prompt</b> – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu </li>
+                <li> Okienko <b>confirm</b> służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm) </li>
+            </ul>
+            
+        <form>
+            <input type="button" name="przycisk" value="Zamknij okno" onclick="zamknij('')">
+        </form>
+        
+    </body>
+
+    </html>
+
+    </textarea>
+	
+	<p> Trzeci kod html: </p>
+	<textarea rows="50" cols="120">
+
+        <html>
+
+    <head>
+        <script type="text/javascript">
+
+            function zamknij() {
+                window.close()
+            }
+
+        </script>
+    </head>
+
+    <body>
+        <p> <b> Konwersja liczb: </b></p>
+        <p>Wczytanie zmiennej z użyciem <b>prompt</b> wykonywane jest jako ciąg znaków dlatego konieczna jest <br/>
+        konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia. <br/>
+        <u>parseFloat(zmienna)</u> - konwersja zmiennej do typu float <br/>
+        <u>parseInt(zmienna)</u> - konwersja zmiennej do typu int (liczbowego) <br/>
+        <u>toString(zmienna)</u>- konwersja zmiennej do typu łańcuchowego</p>
+
+        <form>
+            <input type="button" name="przycisk" value="Zamknij okno" onclick="zamknij('')">
+        </form>
+
+    </body>
+
+    </html>
+
+    </textarea>
+
+</body>
+</html>
+	
