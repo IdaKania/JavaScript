@@ -1,0 +1,53 @@
+<html>
+    <head>
+    </head>
+<body>
+    <p> Kod html: </p>
+        <textarea cols="100" rows="55">
+
+            <html>
+                <head>
+               
+                   <script language="JavaScript">
+                       function zamknij() 
+                       {
+                           window.close();
+                       }
+                   </script>
+               
+                </head>
+               <body>
+               
+                   <div style="color:green;font-size:52px;">
+                       <script language="JavaScript">
+                           var D1_kan=prompt("Dzien pierwszy = ","");
+                           var D2_kan=prompt("Dzien drugi = ","");
+                           var G1_kan=prompt("Godzina pierwsza = ","");
+                           var G2_kan=prompt("Godzina druga = ","");
+               
+                           var suma1;
+                           var suma2;
+                           var sekundy1;
+               
+                           var x=parseInt(D1_kan);
+                           var y=parseInt(D2_kan);
+                           var a=parseInt(G1_kan);
+                           var b=parseInt(G2_kan);
+               
+               
+                           suma1=D2_kan-D1_kan;
+                           sekundy1=(suma1*86400);
+                           suma2=G2_kan-G1_kan;
+                           wynik=sekundy1+(suma2*3600);
+               
+                           document.write("Liczba sekund w styczniu od dnia " + x + " do dnia "+ y +" i od godziny " + a + " do godziny " + b + " to " + wynik + " sekund");
+                       </script>
+                   </div>
+                       <input type="button" name="przycisk" value="Zamknij okno" onclick="zamknij()">
+               </body>
+               </html>
+               
+
+        </textarea>
+</body>
+</html>
