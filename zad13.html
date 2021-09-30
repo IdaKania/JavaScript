@@ -1,0 +1,46 @@
+<html>
+ <head> 
+    <script language="JavaScript">
+        function zamknij() {
+            window.close();
+        }
+    </script>
+ </head>
+ <body>
+  <div style="color: navy; font-size: 80px;">
+
+    <script language="JavaScript">
+
+        var a_kan=prompt("a = ","");
+        var b_kan=prompt("b = ","");
+
+        var a = parseFloat(a_kan);
+        var b = parseFloat(b_kan);
+
+        var c;
+        var d;
+        var e;
+        var f;
+        var g;
+        var h;
+        var i;
+        var j;
+
+        c = (a+b);
+        d = Math.pow(c,3);
+        e = Math.pow(a,3);
+        f = Math.pow(a,2);
+        g = 3*f*b;
+        h = Math.pow(b,2);
+        i = 3*a*h;
+        j = Math.pow(b,3);
+
+        document.write("( a + b )^3 = a^3 + 3a^3b + 2ab^2 + b^3" + "<br/>"); 
+        document.write(d + "=" + e + " + " + g + " + " + i  + " + " + j);
+    </script>
+
+  </div>
+    <br/>
+    <input type="button" name="przycisk" value="zamknij" onclick="zamknij()">
+ </body>
+</html>
