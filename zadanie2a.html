@@ -2,31 +2,34 @@
  <head>
  <script type="text/javascript">
  
- function okno_zamknij_Kania() 
- {
- window.close()
- }
- 
- function otworz_okno1_Kania() 
- {
- window.open("obrazek1.html","","toolbar=no,directories=no,menubar=no,height=600,width=200,top=300,left=400")
- } 
- 
- function otworz_okno2_Kania() 
- {
- window.open("obrazek2.html","","toolbar=no,directories=no,menubar=no,height=600,width=200,top=300,left=700")
- } 
- 
- function otworz_okno3_Kania() 
- {
- window.open("obrazek3.html","","toolbar=no,directories=no,menubar=no,height=600,width=200,top=300,left=1000")
- } 
- 
- function otworz_okno4_Kania() 
- {
- window.open("obrazek4.html","","toolbar=no,directories=no,menubar=no,height=600,width=200,top=300,left=1300")
- }
- 
+ 		function otworz_okno1_Kania()
+            {
+            	var lewo = (screen.width/2)-(200/2)-350;
+            	var gora = (screen.height/2)-(350/2);
+                window.open("obrazek1.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+ gora +",left="+ lewo +"");
+            }
+            
+            function otworz_okno2_Kania()
+            {
+            	var lewo = (screen.width/2)-(200/2)-130;
+            	var gora = (screen.height/2)-(350/2);
+                window.open("obrazek2.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+ gora +",left="+ lewo +"");
+            }
+
+			function otworz_okno3_Kania()
+            {
+            	var lewo = (screen.width/2)-(200/2)+90;
+            	var gora = (screen.height/2)-(350/2);
+                window.open("obrazek3.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+ gora +",left="+ lewo +"");
+            }
+
+			function otworz_okno4_Kania()
+            {
+            	var lewo = (screen.width/2)-(200/2)+310;
+            	var gora = (screen.height/2)-(350/2);
+                window.open("obrazek4.html","","toolbar=no,directories=no,menubar=no,height=350,width=200,top="+ gora +",left="+ lewo +"");
+            }
+
  function zamknij_strone_Kania() 
  {
  window.close()
