@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <title> Użycie fukcji </title>
+        <meta charset="utf-8">
+    </head>
+<body>
+    <div style="color:navy;font-size:50px;">
+    <script language="JavaScript">
+        
+    var a=parseFloat(prompt("a=",""));
+    var b=parseFloat(prompt("b=",""));
+
+    function suma_kan(a, b) {
+    return a + b;
+}
+
+    function odejmowanie_kan(a, b) {
+    return a - b;
+}
+
+    function mnozenie_kan(a, b) {
+    return a * b;
+}
+
+    function do_kwadratu_kan1(a) {
+    return Math.pow(a,2);
+}
+
+    function do_kwadratu_kan2(b) {
+    return Math.pow(b,2);
+}
+
+document.write(a + " + " + b + " = " +suma_kan(a,b)+"<br>");
+document.write(a + " - " + b + " = "+odejmowanie_kan(a,b)+"<br>");
+document.write(a + " * " + b + " = "+mnozenie_kan(a,b)+"<br>");
+document.write(a + " ^ 2" + " = "+do_kwadratu_kan1(a)+"<br>");
+document.write(b + " ^ 2" + " = "+do_kwadratu_kan2(b)+"<br>");
+</script>
+</div>
+</body>
+</html>

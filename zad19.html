@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <head>
+        <title> Zadanie 19 </title>
+        <meta charset="utf-8">
+        <script language="JavaScript">
+
+            function pole_kania(a_kan, b_kan)
+            {
+             a1_kan=parseFloat(a_kan);
+             b1_kan=parseFloat(b_kan);
+             pole=a1_kan*b1_kan;
+             document.getElementsByName('pole')[0].value=pole.toFixed(2); /* na dokument */
+             alert("Pole="+pole.toFixed(2)+" cm^2"); /*do okna Alert */
+             pole2.innerHTML="Pole="+pole.toFixed(2)+" cm^2"+"<br>";  /* do tabeli */
+            }
+
+            function obwod_kania(a_kan, b_kan)
+            {
+             a1_kan=parseFloat(a_kan);
+             b1_kan=parseFloat(b_kan);
+             obwod=a1_kan+a1_kan+b1_kan+b1_kan;
+             document.getElementsByName('obwod')[0].value=obwod.toFixed(2);
+             alert("Obwod="+obwod.toFixed(2)+" cm");
+             obwod2.innerHTML="Obwod="+obwod.toFixed(2)+"cm";
+            }
+
+        </script>
+    </head>
+<body>
+
+Obliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_kania(this.a2.value,this.b2.value); 
+obwod_kania(this.a2.value,this.b2.value);return false">
+Podaj a=
+<input size="6" name="a2">
+Podaj b=
+<input size="6" name="b2">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+pole=
+<input size="6" name="pole">
+obwod=
+<input size="6" name="obwod">
+</form>
+<table>
+<tr id="pole2"></tr>
+<tr id="obwod2"></tr>
+<tr></tr>
+</table>
+</div>
+</body>
+</html>
