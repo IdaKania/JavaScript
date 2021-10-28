@@ -1,0 +1,76 @@
+<html>
+	<head>
+	<meta charset="UTF-8">
+	</head>
+<body>
+	<p> Kod html: </p>
+	
+	<textarea rows="65" cols="200">
+
+        <html>
+            <head>
+                <title> Zad 21</title>
+                <script language="JavaScript">
+        
+                    function dra_kania(a_kan,b_kan)
+                    {
+                            a_kan=parseFloat(a_kan);
+                            b_kan=parseFloat(b_kan);
+        
+                            wynik = Math.sqrt( a_kan * a_kan + b_kan * b_kan)
+        
+                                document.getElementsByName('dra')[0].value=wynik.toFixed(2); 
+        
+                                wyprowadz_dra_kania.innerHTML="Drabina="+wynik.toFixed(2)+" m"+"<br>"; }
+        
+        
+                function alfa_kania(a_kan,b_kan)
+                {
+                        a_kan=parseFloat(a_kan);
+                        b_kan=parseFloat(b_kan);
+        
+                        radan = Math.atan2(a_kan, b_kan);
+        
+                        wynik = radan * (180/Math.PI);
+        
+                            document.getElementsByName('alfa')[0].value=wynik.toFixed(2); 
+        
+                            wyprowadz_alfa_kania.innerHTML="Stopnie= "+wynik.toFixed(2)+" Stopni "+"<br>"; }
+        
+                </script>
+            </head>
+            <body>
+        
+                <form name="formularz" action="..." onsubmit="dra_kania(this.a_dana_kania.value,this.b_dana_kania.value);alfa_kania(this.a_dana_kania.value,this.b_dana_kania.value);return false">   
+        
+                    Podaj d=
+                    <input size="6" name="a_dana_kania">
+        
+                    Podaj x=
+                    <input size="6" name="b_dana_kania">
+        
+                <br><br>
+        
+                    <input TYPE="submit" Value="oblicz" >
+        
+                <br><br>
+        
+                    Drabina=
+                    <input size="6" name="dra">
+        
+                    Alfa=
+                    <input size="6" name="alfa">
+                    
+                </form>
+                <table>
+                        <tr id="wyprowadz_dra_kania"></tr> 
+                        <tr id="wyprowadz_alfa_kania"></tr> 
+                </table>
+            </body>
+        </html>
+        
+    </textarea>
+
+</body>
+</html>
+	
