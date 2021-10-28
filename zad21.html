@@ -26,17 +26,18 @@
 
                     document.getElementsByName('alfa')[0].value=wynik.toFixed(2); 
 
-                    wyprowadz_alfa_kania.innerHTML="Stopnie= "+wynik.toFixed(2)+" Stopni "+"<br>"; }
+                    wyprowadz_alfa_kania.innerHTML= "Stopnie= " + wynik.toFixed(2) + " Stopni " + "<br>" ; }
 
         </script>
     </head>
     <body>
 
-        <form name="formularz" action="..." onsubmit="dra_kania(this.a_dana_kania.value,this.b_dana_kania.value);alfa_kania(this.a_dana_kania.value,this.b_dana_kania.value);return false">   
+        <form name="formularz" action="..." onsubmit="dra_kania (this.a_dana_kania.value,this.b_dana_kania.value); 
+        alfa_kania(this.a_dana_kania.value,this.b_dana_kania.value);
+        return false">   
 
             Podaj d=
             <input size="6" name="a_dana_kania">
-
             Podaj x=
             <input size="6" name="b_dana_kania">
 
@@ -48,7 +49,6 @@
 
             Drabina=
             <input size="6" name="dra">
-
             Alfa=
             <input size="6" name="alfa">
             
