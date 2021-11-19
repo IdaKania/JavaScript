@@ -2,23 +2,31 @@
     <head>
         <title> Zadanie 70</title>
         <meta charset="utf-8">
-            <script language="JavaScript">  
+    </head>
+<body>
+	<div>
+        <script>
 
                 var a_kan = prompt("a= ","");
                 var b_kan = prompt("b= ","");
 
-                    a_kan=parseInt(a_kan);
-                    b_kan=parseInt(b_kan);
+                a_kan=parseFloat(a_kan);
+                b_kan=parseFloat(b_kan);
 		    
-		    for(int i=0; i<a_kan ;i++) {
-			    document.write("*" + "<br/>");
+		    for(i=0; i<a_kan; i++) {
+			    document.write("&nbsp;" + "*");
 		    }
-		    
-            </script>
-    </head>
-<body>
-	
-	<p> dss </p>
-	
+		      document.write("<br/>");
+            for(j=0; j<b_kan; j++) {
+                document.write("*" + "&ensp;&ensp;&ensp;&ensp;" + "*" + "<br/>");
+            }
+            
+            for(i=0; i<a_kan; i++) {
+			    document.write("&nbsp;" + "*");
+		    }
+
+
+        </script>
+    </div>
 </body>
 </html>
