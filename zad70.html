@@ -5,14 +5,15 @@
             <script language="JavaScript">  
 
                 var a_kan = prompt("a= ","");
-                var b_kan = prompt("b= ", "");
+                var b_kan = prompt("b= ","");
 
                     a_kan=parseInt(a_kan);
                     b_kan=parseInt(b_kan);
-
-                document.write(a_kan + " " + b_kan);
-
-
+		    
+		    for(int i=0; i<a_kan ;i++) {
+			    document.write("*" + "<br/>");
+		    }
+		    
             </script>
     </head>
 <body>
