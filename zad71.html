@@ -1,29 +1,28 @@
 <!DOCTYPE html>
     <head>
-        <title> Zadanie 70</title>
+        <title> Zadanie 71 </title>
         <meta charset="utf-8">
             <script language="JavaScript">  
 
-                var a_kan = prompt("a= ","");
-                var b_kan = prompt("b= ","");
+                var a_kan = prompt("nazwisko= ","");
+                var b_kan = prompt("imie= ","");
+                var a = (a_kan.length%4)+5;
+                var b = (b_kan.length%6)+20;
 
-                    a_kan=parseInt(a_kan);
-                    b_kan=parseInt(b_kan);
-                
-                for(var i=0; i<a_kan ;i++) {
+                for(var i=0; i<a ;i++) {
                     document.write("*");
                 }
                     document.write("<br/>");
 
-                for(var i=0; i<b_kan ;i++) {
+                for(var i=0; i<b ;i++) {
                     document.write("*");
-                        for(var k=0; k<a_kan; k++) {
+                        for(var k=0; k<a; k++) {
                             document.write("&nbsp;");
                         }
                         document.write("*"+"<br/>");
                 }
 
-                for(var j=0; j<a_kan ;j++) {
+                for(var j=0; j<a ;j++) {
                     document.write("*");
                 }
 		    
